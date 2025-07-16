@@ -87,9 +87,13 @@ flutter run
  └────────────┘         └─────────────┘         └─────────────┘
 ```
 
+---
+
 ## ✅ Demo Video
 📽️ Watch the Assignment Walkthrough
 (Replace # with your actual video link)
+
+---
 
 ## 📜 SDK Design
 **Public API**: initialize(), trackSms(), trackCallLog()
@@ -99,6 +103,8 @@ flutter run
 **Immediate Send**: If SMS is transactional.
 
 **Batch Send**: Flushes buffer when 50 events collected.
+
+---
 
 ## 👤 Author
 Riddhi Lahare
