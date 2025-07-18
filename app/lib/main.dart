@@ -23,10 +23,8 @@ class _MyAppState extends State<MyApp> {
   }
 
   Future<void> _init() async {
-    // Initialize SDK
     sdk = DataCollectionSDK.initialize(apiUrl: 'http://10.0.2.2:8000');
 
-    // Request permissions
     var status = await Permission.sms.request();
     setState(() {
       _smsPermission = status.isGranted;
@@ -35,7 +33,6 @@ class _MyAppState extends State<MyApp> {
     if (_smsPermission) {
       _log.add('✅ SMS Permission Granted');
 
-      // For demo, mock SMS & Call Log:
       for (int i = 0; i < 55; i++) {
         final sms = {
           'id': i,
